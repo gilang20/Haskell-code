@@ -15,3 +15,19 @@ product' (x:xs) = x * product' xs
 
 length' [] = 0
 length' (x:xs) = 1 + length' xs
+
+reverse' [] = []
+reverse' (x:xs) = reverse' xs ++ [x]
+
+init' [x] = []
+init' (x:xs) = x : init' xs
+
+take' n ls
+  | n <= 0 = []
+  | null ls = []
+  | otherwise = head ls : take' (n-1) (tail ls)
+  
+drop' n ls
+  | n <= 0 = ls
+  | null ls = ls
+  | otherwise = drop' (n-1) (tail ls)
