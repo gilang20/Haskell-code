@@ -1,1 +1,1 @@
-Just love this language :)
+Love this language :)
