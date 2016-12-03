@@ -31,3 +31,6 @@ drop' n ls
   | n <= 0 = ls
   | null ls = ls
   | otherwise = drop' (n-1) (tail ls)
+
+quicksort1 [] = []
+quicksort1 (x:xs) = quicksort1 (filter (<= x) xs) ++ [x] ++ quicksort1 (filter (> x) xs)
