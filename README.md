@@ -1,1 +1,1 @@
-Haskell, gue suka banget sama ni bahasa :))
+Just love this language :)
